@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Netflix - Inscription</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fa515c205.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="containerconnection reverse">
+        <!-- NAVBAR -->
+        <div class="navBar reverse">
+            <div class="leftside">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo_netflix.svg" alt="Logo de la plateforme Netflix"></a>
+                </div>
+            </div>
+            <div class="log">
+                <a class= "btnred" href="connexion.html">Connexion</a>
+                <a class= "btnwhite" href="">Inscription</a>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="formcontainer reverse">
+            <div class="form">
+                <form action="" class="formsignlogin" method="post">
+                    <fieldset class="login">
+                        <legend class="connect">Inscrivez-vous</legend>
+                        <div class="fullname">
+                            <p>
+                                <label for="firstname">Prénom</label>
+                                <input type="text" class="enterinfo" placeholder="Votre prénom">
+                            </p>
+                            <p>
+                                <label for="lastname">Nom</label>
+                                <input type="text" class="enterinfo" placeholder="Votre nom">
+                            </p>
+                        </div>
+                        
+                        <p>
+                            <label for="email">Adresse mail</label>
+                            <input type="text" class="enterinfo" placeholder="exemple@email.com" name="email">
+                        </p>
+
+                        <label for="phone">Numéro de téléphone</label>
+                        <p class="phonecontainer">
+                            <select name="phone" id="phone" class="enterinfo">
+                                <option value="+33">+33</option>
+                                <option value="+32">+32</option>
+                                <option value="+34">+34</option>
+                                <option value="+39">+39</option>
+                                <option value="+43">+43</option>
+                                <option value="+49">+49</option>
+                            </select>
+                            <input type="number" class= "enterinfo" name="phone" placeholder="Votre numéro de téléphone">
+                        </p>
+
+                        <p>
+                            <label for="birthdate">Votre date de naissance</label>
+                            <input type="date" class="enterinfo">
+                        </p>
+
+                        <div class="plssignup">
+                            <p>Vous avez un compte ?</p>
+                            <a href="">Connectez-vous</a>
+                        </div>
+
+                        <a href="" class="btnwhite subscribing">M'inscrire</a>
+                    </fieldset>
+                    
+                    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

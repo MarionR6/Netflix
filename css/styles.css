@@ -1,0 +1,996 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+a, img{
+    display: block;
+}
+
+a{
+    color: white;
+}
+
+html{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    background-color: var(--black);
+}
+
+
+:root{
+    --red: #e50914;
+    --black: #181818;
+    --darkgrey: #2f2f2f;
+    --grey: #d2d2d2;
+}
+
+.btnred{
+    background-color: var(--red);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    width: 13vw;
+    padding: 0.8vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnred a{
+    transition: .5s all;
+}
+
+.btnred:hover a{
+    transform: scale(1.1);
+}
+
+.btnwhite{
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    font-weight: 400;
+    font-size: 1.3rem;
+    width: 13vw;
+    padding: 0.8vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whiteborder{
+    border-radius: 0.5rem;
+    border: 0.15rem solid white;
+    font-weight: 400;
+    font-size: 1.3rem;
+    width: 13vw;
+    padding: 0.8vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whiteborder a{
+    transition: .5s all;
+}
+
+.whiteborder a:hover{
+    transform: scale(1.1);
+}
+
+a{
+    transition: .5s all;
+}
+
+a:hover{
+    transform: scale(1.1);
+}
+
+.respnav{
+    display: none;
+}
+
+.reverse{
+    transform: rotateY(180deg);
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    background: linear-gradient(rgba(16, 16, 16, 0.759), rgba(16, 16, 16, 0.759)),
+    url(../img/inscription-connexion-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.navBar{
+    width: 100%;
+    padding: 2% 0 2% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navBar .leftside{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar .leftside .logo{
+    width: 25%;
+}
+
+.navBar .leftside .logo img{
+    width: 100%;
+}
+
+.navBar .leftside nav{
+    width: 50%;
+}
+
+.navBar .leftside nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+}
+
+.navBar .leftside nav ul li{
+    font-size: 1.1rem;
+}
+
+.navBar .leftside nav ul li a{
+    color: white;
+    font-weight: 400;
+}
+
+.navBar .log{
+    width: 18%;
+    display: flex;
+}
+
+.navBar .log a{
+    margin-right: 10%;
+}
+
+.navBar .log .btnred{
+    margin-right: 5%;
+}
+
+/* INTRO SHOW */
+
+header .introshow{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16% 0 15.5% 0;
+}
+
+header .introshow .arrows{
+    font-size: 2rem;
+    padding: 0 2.5%;
+}
+
+header .introshow .introshowcontent{
+    width: 100%;
+    margin-left: 6%;
+}
+
+header .introshow .introshowcontent h1{
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    width: 38%;
+}
+
+header .introshow .introshowcontent p{
+    width: 38%;
+    font-size: 1.3rem;
+}
+
+header .introshow .introshowcontent .tagsrate{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+    margin-top: 0.7%;
+}
+
+header .introshow .introshowcontent .tagsrate .tags{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .introshow .introshowcontent .tagsrate .tags p{
+    border: 0.15rem solid white;
+    border-radius: 1rem;
+    width: 31%;
+    padding: 2% 0;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .introshow .introshowcontent .tagsrate .rates{
+    width: 35%;
+    display: flex;
+}
+
+header .introshow .introshowcontent .tagsrate .rates i{
+    font-size: 1.8rem;
+    margin-right: 5%;
+}
+
+header .introshow .introshowcontent .tagsrate .rates p{
+    display: flex;
+    align-items: center;
+}
+header .introshow .introshowcontent .tagsrate .rates p:nth-of-type(2){
+    width: auto;
+    padding: 2% 4%;
+    justify-content: center;
+}
+
+header .introshow .introshowcontent .seasons{
+    width: 23%;
+    display: flex;
+    align-items: center;
+    margin: 1% 0;
+}
+
+header .introshow .introshowcontent .seasons p:nth-of-type(2){
+    width: auto;
+    padding: 1.5% 2%;
+    font-weight: 700;
+    align-items: center;
+}
+
+header .introshow .introshowcontent .btn{
+    display: flex;
+}
+
+header .introshow .introshowcontent .btn a:nth-of-type(1){
+    margin-right: 1.2%;
+}
+
+/* DOTS */
+
+header .headerdots{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+}
+
+header .headerdots .dot{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #707070;
+    margin: 0 0.2%;
+    cursor: pointer;
+}
+
+header .headerdots .reddot{
+    background-color: var(--red);
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+/* SECTION */
+
+section{
+    width: 100%;
+}
+
+section .lastreleases{
+    width: 100%;
+    padding: 7% 10% 0 10%;
+}
+
+section .lastreleases h2{
+    font-size: 2.8rem;
+    margin-bottom: 4%;
+}
+
+section .lastreleases .casacontainer{
+    width: 95%;
+    display: flex;
+}
+
+section .lastreleases .casacontainer .imgcasa{
+    width: 45%;
+}
+
+section .lastreleases .casacontainer .imgcasa img{
+    width: 100%;
+}
+
+section .lastreleases .casacontainer .casatxt{
+    width: 50%;
+    padding: 2.5% 0 0 2%;
+}
+
+section .lastreleases .casacontainer .casatxt p{
+    font-size: 1.25rem;
+}
+
+section .lastreleases .casacontainer .btnred{
+    margin-top: 12%;
+}
+
+/* ARTICLE CATALOGUE */
+
+section .catalogue{
+    width: 100%;
+    padding-top: 10%;
+}
+
+section .catalogue .imgcontainer{
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: translateX(-15%);
+}
+
+section .catalogue .imgcontainer .image{
+    width: 16%;
+    margin: 0 0.5%;
+}
+
+section .catalogue .imgcontainer .image img{
+    width: 100%;
+    cursor: pointer;
+}
+
+section .catalogue .imgcontainer .firstimg{
+    width: 16%;
+    position: relative;
+}
+
+section .catalogue .imgcontainer .firstimg img{
+    width: 100%;
+}
+
+section .catalogue .imgcontainer::before{
+    content:"";
+    height: 100%;
+    width: 50vw;
+    background: linear-gradient(to right, #000000, #181818, transparent);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+section .catalogue .imgcontainer::after{
+    content:"";
+    height: 100%;
+    width: 55vw;
+    background: linear-gradient(to left, #000000, #181818, transparent);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+section .catalogue .imgcontainer .firstimg::before{
+    content: "\f0d9";
+    font-family: "Font Awesome 5 Free";
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+section .catalogue .imgcontainer .lastimg::after{
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-size: 4rem;
+    font-weight: 900;
+    color: white;
+    position: absolute;
+    right: 19.1%;
+    top: 40%;
+    z-index: 3;
+    cursor: pointer;
+}
+
+section .catalogue .btnred{
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+/* ARTICLE PRICES */
+
+section .diffprices{
+    width: 100%;
+}
+
+section .diffprices h2{
+    font-size: 2.8rem;
+    padding: 7% 10% 0 10%;
+}
+
+section .diffprices .containerprices{
+    display: flex;
+    justify-content: space-between;
+    margin: 10% 5% 0 5%;
+}
+
+section .diffprices .containerprices .price{
+    background-color: var(--darkgrey);
+    padding: 5% 2%;
+    border-radius: 1.5rem;
+    transition: .5s all;
+}
+
+section .diffprices .containerprices .price:hover{
+    transform: scale(1.2);
+    border-top: 1rem #e50914 solid;
+}
+
+section .diffprices .containerprices .price .pricename{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20%;
+}
+
+section .diffprices .containerprices .price .pricename h3{
+    font-size: 2.5rem;
+    padding-bottom: 10%;
+}
+
+section .diffprices .containerprices .price .pricename p{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+section .diffprices .containerprices .price .pricename p .greymonth{
+    color: #8e8e8e;
+}
+
+section .diffprices .containerprices .price p{
+    font-size: 1.5rem;
+    line-height: 250%;
+    color: var(--grey);
+}
+
+section .diffprices .containerprices .price .unavailable{
+    color: var(--black);
+}
+
+section .diffprices .btnred{
+    margin: 0 auto;
+    margin-top: 6%;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    padding: 7% 10% 0 10%;
+}
+
+footer .social{
+    display: flex;
+}
+
+footer .social a{
+    font-size: 2.5rem;
+    padding-right: 3%;
+}
+
+/* FOOTER INFOS */
+
+footer .containerinfos{
+    display: flex;
+}
+
+footer .containerinfos .column{
+    margin: 5% 5% 5% 0;
+}
+
+footer .containerinfos .column ul{
+    font-size: 0;
+}
+
+footer .containerinfos .column ul li{
+    font-size: 1.7rem;
+    line-height: 200%;
+}
+
+footer .containerinfos .column ul li a{
+    color: var(--grey);
+}
+
+footer p{
+    margin-bottom: 2%;
+    font-size: 1.1rem;
+}
+
+/* ---------------------- PAGE CONNECTION */
+
+.containerconnection{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to left, #000000, #000000e5, transparent, transparent),
+    url(../img/inscription-connexion-background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerconnection .navBar{
+    height: 10vh;
+}
+
+.containerconnection .formcontainer{
+    padding-left: 5%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    background-color: #70707023;
+    backdrop-filter: blur(8px);
+    display: block;
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+}
+
+.form .formsignlogin fieldset{
+    border: 0;
+}
+.form .formsignlogin fieldset legend{
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+.form .formsignlogin fieldset .connect{
+    padding: 3% 0 7% 0;
+}
+
+.form .formsignlogin fieldset p{
+    margin-bottom: 5%;
+}
+
+.form .formsignlogin fieldset p .enterinfo{
+    background-color: #2f2f2f;
+    color: #8e8e8e;
+    border-radius: 1rem;
+    border: 0;
+    width: 100%;
+    padding: 3%;
+    margin-top: 2%;
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+.form .formsignlogin fieldset .connectremember{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.form .formsignlogin fieldset .connectremember .btnwhite{
+    margin-right: 2%;
+}
+
+.form .formsignlogin fieldset .connectremember input[type="checkbox"] {
+    display: none;
+}
+
+.form .formsignlogin fieldset .connectremember input[type="checkbox"] + label {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background-color: grey;
+    border: 0.2rem solid #ccc;
+    border-style: dotted dashed;
+    cursor: pointer;
+}
+
+.form .formsignlogin fieldset .connectremember input[type="checkbox"]:checked + label {
+    background-color: red;
+}
+
+.form .formsignlogin fieldset .connectremember label{
+    margin-left: 2%;
+}
+
+.form .formsignlogin fieldset .plssignup{
+    display: flex;
+}
+
+.form .formsignlogin fieldset .plssignup p{
+    margin-right: 2%;
+    color: #8e8e8e;
+    font-size: 1.2rem;
+}
+
+.form .formsignlogin fieldset .plssignup a{
+    font-size: 1.2rem;
+}
+
+.form .formsignlogin fieldset .plssignup a:hover{
+    transform: scale(1.05);
+}
+
+.form .formsignlogin .orgoogle .orline{
+    display: flex;
+    align-items: center;
+}
+
+.form .formsignlogin .orgoogle .orline .line{
+    width: 46%;
+    height: 0.1rem;
+    background-color: white;
+}
+
+.form .formsignlogin .orgoogle .orline legend{
+    padding: 0 2%;
+}
+
+.form .formsignlogin .orgoogle .btnwhite{
+    width: 100%;
+    margin-top: 5%;
+}
+
+.form .formsignlogin .orgoogle .btnwhite:hover{
+    transform: scale(1.05);
+}
+
+/* ------------------------- PAGE SUBSCRIPTION */
+
+.formcontainer .form .formsignlogin .login .fullname{
+    display: flex;
+}
+
+.formcontainer .form .formsignlogin .login .fullname p{
+    width: 48%;
+}
+
+.formcontainer .form .formsignlogin .login .fullname p:nth-of-type(2){
+    margin-left: 4%;
+}
+
+.formcontainer .form .formsignlogin .login .fullname .enterinfo{
+    padding: 6.2%;
+}
+
+.formcontainer .form .formsignlogin .login .phonecontainer{
+    display: flex;
+}
+
+.formcontainer .form .formsignlogin .login .phonecontainer select{
+    width: 20%;
+    margin-right: 3%;
+}
+
+.formcontainer .form .formsignlogin .login .phonecontainer select option{
+    font-size: 1rem;
+}
+
+.formcontainer .form .formsignlogin .login .subscribing{
+    width: 100%;
+}
+
+.formcontainer .form .formsignlogin .login .btnwhite:hover{
+    transform: scale(1.05);
+}
+
+
+/* ------------------- PAGE EDIT PROFILE */
+
+
+.profilescontainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profilescontainer .whoswatching{
+    font-size: 5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.profilescontainer .profileslist{
+    width: 100%;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profilescontainer .profileslist .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.profilescontainer .profileslist .profile .profileimg{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    border-radius: 1.2rem;
+    
+}
+
+.profilescontainer .profileslist .profile .profileimg img{
+    width: 100%;
+    padding: 12%;
+}
+
+.profilescontainer .profileslist .profile .blueprofile{
+    background: linear-gradient(#3765ea, #2442a3);
+}
+
+.profilescontainer .profileslist .profile .yellowprofile{
+    background: linear-gradient(#ead737, #ad9e36);
+}
+
+.profilescontainer .profileslist .profile .greenprofile{
+    background: linear-gradient(#42aa04, #469511);
+}
+
+.profilescontainer .profileslist .profile .addprofile{
+    justify-content: center;
+    align-items: center;
+}
+
+.profilescontainer .profileslist .profile .addprofile i{
+    font-size: 9rem;
+}
+
+.profilescontainer .profileslist .profile p{
+    font-size: 1.8rem;
+    padding-top: 7%;
+}
+
+.profilescontainer .whiteborder{
+    margin: 0 auto;
+    margin-top: 7%;
+}
+
+
+/* ----------------- PAGE EDIT PROFILE */
+
+.pageeditprofile{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editprofilecontainer{
+    width: 40%;
+}
+
+.editprofilecontainer .editprofilep{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1%;
+}
+
+.editprofilecontainer .flexprofile{
+    width: 100%;
+    display: flex;
+    border-top: 0.2rem solid white;
+    padding-top: 2%;
+}
+
+.editprofilecontainer .flexprofile .leftsideprofile{
+    position: relative;
+    display: flex;
+    width: 15%;
+    height: 10rem;
+    margin-right: 10%;
+}
+
+.editprofilecontainer .flexprofile .leftsideprofile img{
+    width: 10rem;
+    height: 10rem;
+    padding: 12%;
+    background: linear-gradient(#3765ea, #2442a3);
+    border-radius: 1rem;
+}
+
+.editprofilecontainer .flexprofile .leftsideprofile i{
+    position: absolute;
+    bottom: 9%;
+    left: 9%;
+    background-color: #000000;
+    padding: 4%;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+
+.editprofilecontainer .flexprofile .profilesettings{
+    width: 80%;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .profileinput{
+    background-color: var(--darkgrey);
+    border: 0;
+    font-size: 1.7rem;
+    padding: 1%;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .profileinput::placeholder{
+    color: white;
+    letter-spacing: .05rem;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .settingcategory{
+    font-size: 1.9rem;
+    margin: 4% 0 1% 0;
+}
+.editprofilecontainer .flexprofile .profilesettings .profileinputsmall{
+    color: var(--grey);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .moreinfo{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1% 0;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .moreinfo:hover{
+    transform: scale(1);
+    text-decoration: underline;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .agecategory{
+    display: flex;
+    width: 60%;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .agecategory p{
+    width: 14vw;
+    margin-right: 10%;
+    padding: 2% 0;
+    text-align: center;
+    
+}
+
+.editprofilecontainer .flexprofile .profilesettings .agecategory .whiteborder{
+    margin: 0;
+    width: 14vw;
+    border-radius: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .settingsbtns{
+    display: flex;
+    width: 120%;
+    margin-top: 10%;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .settingsbtns a{
+    border-radius: 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 1.5% 0;
+    width: 11vw;
+}
+
+.editprofilecontainer .flexprofile .profilesettings .settingsbtns .whiteborder{
+    margin-left: 2%;
+}
+
+
+
+
+/* RESPONSIVE */
+
+/* 1440PX */
+
+@media screen and (max-width: 1440px) {
+    html{
+        font-size: 12px;
+    }
+}
+
+/* 1024PX */
+
+@media screen and (max-width: 1024px) {
+    html{
+        font-size: 10px;
+    }
+
+    .btnred{
+        width: 18vw;
+    }
+
+    .whiteborder{
+        width: 18vw;
+    }
+
+    header .navBar .leftside{
+        width: 40%;
+    }
+
+    header .navBar .leftside nav{
+        width: 60%;
+    }
+
+    header .navBar .leftside nav ul li{
+        font-size: 1.5rem;
+    }
+    
+    header .navBar .log{
+        width: 25%;
+    }
+
+    header .introshow .introshowcontent h1,
+    header .introshow .introshowcontent p{
+        width: 50%;
+    }
+
+    header .introshow .introshowcontent h1{
+        font-size: 4rem;
+    }
+    
+    header .introshow .introshowcontent p{
+        font-size: 1.8rem;
+    }
+
+    header .introshow .introshowcontent .tagsrate{
+        width: 45%;
+    }
+
+    header .introshow .introshowcontent .tagsrate .tags p{
+        font-size: 1.2rem;
+        width: 50%;
+        margin-right: 5%;
+    }
+
+    header .introshow .introshowcontent .btn a:nth-of-type(1){
+        margin-right: 4%;
+    }
+}
+
+/* 768PX */
+
+@media screen and (max-width: 768px){
+    header .navBar{
+        display: none;
+    }
+}
+

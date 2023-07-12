@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Netflix - Editer le profil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5fa515c205.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="pageeditprofile">
+    <div class="editprofilecontainer">
+        <p class="editprofilep">Editer le profil</p>
+        <div class="flexprofile">
+            <div class="leftsideprofile">
+                <img src="img/profil_base.svg" alt="">
+                <i class="fa-solid fa-pen"></i>
+            </div>
+            <div class="profilesettings">
+                <input type="text" placeholder="Papa" class="profileinput">
+                <p class="settingcategory">Langue</p>
+                <select name="language" id="language" class="profileinput profileinputsmall">
+                    <option value="french">Français</option>
+                    <option value="english">English</option>
+                    <option value="spanish">Español</option>
+                    <option value="german">Deutsh</option>
+                    <option value="italian">Italiano</option>
+                </select>
+                <p class="settingcategory">Allias</p>
+                <p>Votre allias est un identifiant unique qui sera utilisé lorsque vous jouerez à des jeux Netflix avec d'autres abonnés.</p>
+                <a class= "moreinfo" href="">En savoir plus</a>
+                <input type="text" placeholder="Créer un allias" class="profileinput profileinputsmall">
+                <p class="settingcategory">Catégories d'âge</p>
+                <div class="agecategory">
+                    <p class="profileinput profileinputsmall">Tous les âges</p>
+                    <a href="" class="whiteborder">Modifier</a>
+                </div>
+                <div class="settingsbtns">
+                    <a href="profiles.html" class="btnwhite">Enregistrer</a>
+                    <a href="profiles.html" class="whiteborder">Annuler</a>
+                    <a href="" class="whiteborder">Supprimer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
