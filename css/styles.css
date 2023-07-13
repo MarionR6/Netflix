@@ -6,7 +6,6 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
-    overflow-x: hidden;
 }
 
 a, img{
@@ -1107,15 +1106,14 @@ footer p{
 }
 
 .mylist .caroulist{
-    width: 150%;
+    width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
-    transform: translateX(-11%);
 }
 
 .mylist .caroulist .carouitem{
-    width: 12%;
+    width: 15%;
     margin: 0 0.3%;
 }
 
@@ -1123,7 +1121,6 @@ footer p{
     width: 100%;
     height: 20vh;
 }
-
 
 
 /* ---------------------- RESPONSIVE */
