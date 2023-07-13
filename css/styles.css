@@ -920,7 +920,7 @@ footer p{
 .headervideo{
     width: 100%;
     height: 100vh;
-    
+    position: relative;
 }
       
 .headervideo iframe {
@@ -934,7 +934,7 @@ footer p{
 }
 
 .headervideo .navBar{
-    position: relative;
+    position: absolute;
     z-index: 2;
     padding-top: 3.5%;
 }
@@ -969,13 +969,24 @@ footer p{
 }
 
 .headervideo .navBar .log .menuprofiles{
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 120%;
-    left: 0;
-    width: 45%;
+    left: -5%;
+    width: 55%;
 }
 
+.headervideo .navBar .log .imgloggedperson:hover .menuprofiles {
+    display: block;
+}
+
+.headervideo .navBar .log .imgloggedperson:hover ~ .sortupdown i:first-of-type {
+    display: none;
+  }
+  
+  .headervideo .navBar .log .imgloggedperson:hover ~ .sortupdown i:last-of-type {
+    display: inline-block;
+  }
 .headervideo .navBar .log .menuprofiles ul{
     font-size: 0;
     padding: 5%;
@@ -988,14 +999,30 @@ footer p{
 
 .headervideo .navBar .log .menuprofiles ul li:nth-of-type(3),
 .headervideo .navBar .log .menuprofiles ul li:nth-of-type(4),
-.headervideo .navBar .log .menuprofiles ul li:nth-of-type(5),
-.headervideo .navBar .log .menuprofiles ul li:nth-of-type(6){
+.headervideo .navBar .log .menuprofiles ul li:nth-of-type(5){
     font-size: 0.8rem;
+}
+
+.headervideo .navBar .log .menuprofiles ul li:nth-of-type(6){
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .headervideo .navBar .log .menuprofiles ul li a{
     display: flex;
     align-items: center;
+}
+
+.headervideo .navBar .log .menuprofiles ul .line{
+    width: 100%;
+    height: 0.1rem;
+    background-color: white;
+}
+
+.headervideo .navBar .log .menuprofiles ul li a i{
+    margin-right: 10%;
 }
 
 .headervideo .navBar .log .menuprofiles ul li .profileinmenu img{
@@ -1012,10 +1039,6 @@ footer p{
 
 .headervideo .navBar .log .menuprofiles ul li .profileinmenu .greenbackground{
     background: linear-gradient(#42aa04, #469511);
-}
-
-.headervideo .navBar .log .imgloggedperson:hover .menuprofiles {
-    display: block;
 }
 
 .headervideo .navBar .log .rollout{
@@ -1036,6 +1059,35 @@ footer p{
 
 .headervideo .navBar .log .sortupdown i:nth-of-type(2){
     display: none;
+}
+
+/* INTRO SHOW */
+
+.headervideo .introshow {
+    z-index: 3;
+    position: absolute;
+    padding: 13% 0 15.5% 0;
+}
+
+.headervideo .introshow .introshowcontent p{
+    margin: 2% 0;
+}
+
+.headervideo .introshow .introshowcontent .btn{
+    align-items: center;
+    justify-content: center;
+}
+
+.headervideo .introshow .introshowcontent .btn .iconmute{
+    margin-left: auto;
+    margin-right: 10%;
+}
+
+.headervideo .introshow .introshowcontent .btn .iconmute i{
+    border-radius: 100%;
+    border: 0.4rem white solid;
+    padding: 20%;
+    font-size: 2rem;
 }
 
 
