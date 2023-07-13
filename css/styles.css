@@ -704,8 +704,7 @@ footer p{
 }
 
 
-/* ------------------- PAGE EDIT PROFILE */
-
+/* ------------------- PAGE CONNECT PROFILE */
 
 .profilescontainer{
     width: 100%;
@@ -917,6 +916,9 @@ footer p{
 
 /* -------------------PAGE HOME REGISTER */
 
+
+/* VIDEO BACKGROUND */
+
 .headervideo{
     width: 100%;
     height: 100vh;
@@ -933,6 +935,8 @@ footer p{
     z-index: 1;
 }
 
+/* NAVBAR */
+
 .headervideo .navBar{
     position: absolute;
     z-index: 4;
@@ -947,10 +951,11 @@ footer p{
     width: 40%;
 }
 
+/* PART LOG */
+
 .headervideo .navBar .log{
     align-items: center;
     position: relative;
-
 }
 
 .headervideo .navBar .log .imgloggedperson{
@@ -982,11 +987,12 @@ footer p{
 
 .headervideo .navBar .log .imgloggedperson:hover ~ .sortupdown i:first-of-type {
     display: none;
-  }
+}
   
-  .headervideo .navBar .log .imgloggedperson:hover ~ .sortupdown i:last-of-type {
+.headervideo .navBar .log .imgloggedperson:hover ~ .sortupdown i:last-of-type {
     display: inline-block;
-  }
+}
+
 .headervideo .navBar .log .menuprofiles ul{
     font-size: 0;
     padding: 5%;
@@ -1061,7 +1067,7 @@ footer p{
     display: none;
 }
 
-/* INTRO SHOW */
+/* PART INTRO SHOW */
 
 .headervideo .introshow {
     z-index: 3;
