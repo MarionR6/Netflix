@@ -6,6 +6,7 @@
     text-decoration: none;
     list-style-type: none;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 a, img{
@@ -929,7 +930,7 @@ footer p{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -1069,24 +1070,24 @@ footer p{
 
 /* PART INTRO SHOW */
 
-.headervideo .introshow {
+.headervideo .introshow{
     z-index: 3;
     position: absolute;
     padding: 13% 0 15.5% 0;
 }
+
 
 .headervideo .introshow .introshowcontent p{
     margin: 2% 0;
 }
 
 .headervideo .introshow .introshowcontent .btn{
-    align-items: center;
-    justify-content: center;
+    width: 100%;
 }
 
 .headervideo .introshow .introshowcontent .btn .iconmute{
+    padding-right: 10%;
     margin-left: auto;
-    margin-right: 10%;
 }
 
 .headervideo .introshow .introshowcontent .btn .iconmute i{
@@ -1094,6 +1095,33 @@ footer p{
     border: 0.4rem white solid;
     padding: 20%;
     font-size: 2rem;
+}
+
+.mylist{
+    width: 100vw;
+    position: relative;
+}
+
+.mylist h1{
+    margin: 0 0 1% 2.5%;
+}
+
+.mylist .caroulist{
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transform: translateX(-11%);
+}
+
+.mylist .caroulist .carouitem{
+    width: 12%;
+    margin: 0 0.3%;
+}
+
+.mylist .caroulist .carouitem img{
+    width: 100%;
+    height: 20vh;
 }
 
 
